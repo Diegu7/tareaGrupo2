@@ -1,5 +1,6 @@
 package main;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Ticket {
@@ -38,7 +39,9 @@ public class Ticket {
 	}
 	
 	public void print(){
-		System.out.println(ref + " - " + precio + " - " + fecha);
+		SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yy");
+		String formatted = format1.format(fecha.getTime());
+		System.out.println(ref + " - " + precio + " - " + formatted);
 	}
 }
 
