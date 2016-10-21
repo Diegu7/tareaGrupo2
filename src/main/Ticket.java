@@ -25,6 +25,18 @@ public class Ticket {
 		return precio;
 	}
 	
+	public void setRef(int r){
+		ref = r;
+	}
+	
+	public void setFecha(Calendar f){
+		fecha = f;
+	}
+	
+	public void setPrecio(double p){
+		precio = p;
+	}
+	
 	public void print(){
 		System.out.println(ref + " - " + precio + " - " + fecha);
 	}
