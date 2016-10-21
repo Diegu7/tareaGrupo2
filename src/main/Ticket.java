@@ -41,7 +41,7 @@ public class Ticket {
 	public void print(){
 		SimpleDateFormat format1 = new SimpleDateFormat("dd/MM/yy");
 		String formatted = format1.format(fecha.getTime());
-		System.out.println(ref + " - " + precio + " - " + formatted);
+		System.out.print(ref + " - " + precio + " - " + formatted);
 	}
 }
 
