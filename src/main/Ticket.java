@@ -14,6 +14,12 @@ public class Ticket {
 		fecha = Calendar.getInstance();
 	}
 	
+	public Ticket(int r, double p, Calendar c){
+		ref = r;
+		precio = p;
+		fecha = c;
+	}
+	
 	public int getRef(){
 		return ref;
 	}
